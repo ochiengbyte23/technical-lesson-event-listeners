@@ -1,15 +1,15 @@
 import React from "react";
 function Question() {
-  function handleClick() {
-    console.log("clicked")
+  function handleClick(number) {
+    console.log(`User selected Answer ${number}!`)
   }
   return (
     <>
       <h1> QUESTION HERE </h1>
-      <button onClick={() => handleClick()}> Answer 1</button>
-      <button onClick={handleClick}> Answer 2</button>
-      <button onClick={handleClick}> Answer 3</button>
-      <button onClick={handleClick}> Answer 4</button>
+      <button onClick={() => handleClick(1)}> Answer 1</button>
+      <button onClick={() => handleClick(2)}> Answer 2</button>
+      <button onClick={() => handleClick(3)}> Answer 3</button>
+      <button onClick={() => handleClick(4)}> Answer 4</button>
     </>
   );
 }
